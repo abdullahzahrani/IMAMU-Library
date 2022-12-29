@@ -1,0 +1,102 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".ResultActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="229dp"
+                app:srcCompat="@drawable/book" />
+
+            <EditText
+                android:id="@+id/editTextAuthName_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="#00BCD4"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="author name" />
+            <EditText
+                android:id="@+id/editTextBookName_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="#00BCD4"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="book title" />
+            <EditText
+                android:id="@+id/editTextCat_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="#00BCD4"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="book category" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_add_data_buttonView"
+                android:layout_width="match_parent"
+                android:onClick="btn_add_data"
+                android:background="#4CAF50"
+                android:layout_height="wrap_content"
+                android:text="add data" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_edit_data_buttonView"
+                android:layout_width="match_parent"
+                android:onClick="btn_edit_data"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:text="edit data" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_delete_data_buttonView"
+                android:layout_width="match_parent"
+                android:onClick="btn_delete_data"
+                android:background="#F44336"
+                android:layout_height="wrap_content"
+                android:text="delete data" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned2Hint_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter ID"
+                android:background="#00BCD4"
+                android:inputType="numberSigned"
+                android:textColor="#009688" />
+
+            <ListView
+                android:id="@+id/listView_view"
+                android:layout_width="match_parent"
+                android:layout_height="371dp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:background="#FFFFFF" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
